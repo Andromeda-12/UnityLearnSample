@@ -24,16 +24,14 @@ public class ScalerModule : MonoBehaviour
         targetScale = defaultScale * scale;
     }
 
-    [ContextMenu("Увеличить!")]
+    [ContextMenu("Activate!")]
     public void ActivateModule()
     {
         Vector3 target = toDefault ? defaultScale : targetScale;
         StopAllCoroutines();
         StartCoroutine(ScaleCoroutine(target));
-        targetScale = targetScale * scale;
-        //toDefault = !toDefault;
+        toDefault = !toDefault;
     }
-    [ContextMenu("Вернуть в исходное")]
     public void ReturnToDefaultState()
     {
         toDefault = true;
