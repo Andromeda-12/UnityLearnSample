@@ -32,6 +32,7 @@ public class ScalerModule : MonoBehaviour
         StartCoroutine(ScaleCoroutine(target));
         toDefault = !toDefault;
     }
+    [ContextMenu("ReturnToDefaultState!")]
     public void ReturnToDefaultState()
     {
         toDefault = true;
