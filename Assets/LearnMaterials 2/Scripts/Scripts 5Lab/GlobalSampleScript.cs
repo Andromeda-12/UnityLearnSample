@@ -9,9 +9,9 @@ public class GlobalSampleScript : MonoBehaviour
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Object");
 
-        foreach(GameObject object in objects)
+        foreach(GameObject obj in objects)
         {
-            var script = furniture.GetComponent<SampleScript>();
+            var script = obj.GetComponent<SampleScript>();
             if(script != null)
                 script.Use();
         }
