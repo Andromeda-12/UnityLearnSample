@@ -45,13 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7c4c049c325147a13be56904ace6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets:
-  - targetGO: {fileID: 780059477964288740}
-    targetState: 0
-    defaultValue: 0
-  - targetGO: {fileID: 780059478107394980}
-    targetState: 1
-    defaultValue: 0
 --- !u!1 &780059477964288740
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,8 +71,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780059477964288740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalRotation: {x: 0.3273651, y: 0.021247534, z: -0.007391508, w: 0.9446301}
+  m_LocalPosition: {x: 0.86126614, y: 1.9017406, z: -2.2250657}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780059476711883182}

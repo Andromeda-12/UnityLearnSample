@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 135992894}
   m_Layer: 0
   m_Name: Refrigerator
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,11 +147,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135992893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.31, y: 1.0487788, z: 0.62}
-  m_LocalScale: {x: 1.0899, y: 1, z: 0.94081}
+  m_LocalPosition: {x: 1.4162536, y: 0.63769543, z: -1.5501884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 774799061}
   - {fileID: 1331756073}
+  - {fileID: 774799061}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -429,12 +429,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774799060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.52, y: 0.557, z: -2.277}
+  m_LocalPosition: {x: 0.00000023841858, y: 0.93581814, z: 0}
   m_LocalScale: {x: 0.8325093, y: 0.5962452, z: 1.1003771}
   m_Children:
   - {fileID: 745501667}
   m_Father: {fileID: 135992894}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &774799062
 BoxCollider:
@@ -586,12 +586,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331756072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.52, y: -0.387, z: -2.277}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8325093, y: 1.2753909, z: 1.1003771}
   m_Children:
   - {fileID: 235105274}
   m_Father: {fileID: 135992894}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1331756074
 BoxCollider:
