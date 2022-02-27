@@ -13,7 +13,6 @@ public class AndreiSampleScript : SampleScript
     [SerializeField]
     private Vector3 movingPoint;
 
-    // Start is called before the first frame update
     void Start()
     {
         myTransform = transform;
@@ -22,16 +21,17 @@ public class AndreiSampleScript : SampleScript
     [ContextMenu("Start")]
     public override void Use()
     {
-        StartCoroutine(RotateCoroutine(movingPoint));
+        StartCoroutine(MoveCoroutine(movingPoint));
     }
 
-    private IEnumerator RotateCoroutine(Vector3 target)
+    private IEnumerator MoveCoroutine(Vector3 target)
     {
         while (transform.position != target)
         {
             transform.position = Vector3.MoveTowards(transform.position, movingPoint, speed * Time.deltaTime);
             yield return null;
         }
+
         transform.position = target;
     }
 }

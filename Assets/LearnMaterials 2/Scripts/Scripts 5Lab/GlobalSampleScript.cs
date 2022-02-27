@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GlobalSampleScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [ContextMenu("Start")]
+    void Use()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Object");
 
