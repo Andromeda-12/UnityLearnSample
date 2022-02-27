@@ -6,13 +6,13 @@ using UnityEngine;
 [HelpURL("https://docs.google.com/document/d/1Cmm__cbik5J8aHAI6PPaAUmEMF3wAcNo3rpgzsYPzDM/edit?usp=sharing")]
 public class TransparentModule : MonoBehaviour
 {
-    [SerializeField]
-    [Min(0)]
-    private float changeSpeed;
-
     private float defaultAlpha;
     private Material mat;
     private bool toDefault;
+
+    [SerializeField]
+    [Min(0)]
+    private float changeSpeed;
 
     private void Start()
     {
@@ -20,6 +20,7 @@ public class TransparentModule : MonoBehaviour
         defaultAlpha = mat.color.a;
         toDefault = false;
     }
+
     [ContextMenu("Activate")]
     public void ActivateModule()
     {

@@ -5,16 +5,17 @@ using UnityEngine;
 public class ScalerModule : MonoBehaviour
 {
     private Vector3 targetScale;
+    private Vector3 defaultScale;
+    private Transform myTransform;
+    private bool toDefault;
+
     [Min(0)]
     [SerializeField]
     private float changeSpeed;
 
-    private Vector3 defaultScale;
-    private Transform myTransform;
     [Min(0)]
     [SerializeField]
     private float scale;
-    private bool toDefault;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class ScalerModule : MonoBehaviour
         StartCoroutine(ScaleCoroutine(target));
         toDefault = !toDefault;
     }
+
     [ContextMenu("ReturnToDefaultState!")]
     public void ReturnToDefaultState()
     {

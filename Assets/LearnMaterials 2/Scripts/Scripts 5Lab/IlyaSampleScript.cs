@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class IlyaSampleScript : SampleScript
 {
+    private Transform myTransform;
+
     [SerializeField]
     private Vector3 targetRotate;
+
     [Min(0)]
     [SerializeField]
     private float rotateSpeed;
-    private Transform myTransform;
+
     private void Start()
     {
         myTransform = transform;
     }
-    private Quaternion aasa;
-    public void Update()
-    {
-        //transform.rotation = transform.rotation * Quaternion.Euler(new Vector3(1, 3, 0.5f) * rotateSpeed * Time.deltaTime);
-    }
+
     public override void Use()
     {
         StartCoroutine(RotateCoroutine(targetRotate));
     }
+
     private IEnumerator RotateCoroutine(Vector3 target)
     {
         var targetRotation = Quaternion.Euler(target);

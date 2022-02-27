@@ -5,6 +5,7 @@ using UnityEngine;
 public class AndreiSampleScript : SampleScript
 {
     private Transform myTransform;
+
     [SerializeField]
     [Min(1)]
     private float speed;
@@ -23,6 +24,7 @@ public class AndreiSampleScript : SampleScript
     {
         StartCoroutine(RotateCoroutine(movingPoint));
     }
+
     private IEnumerator RotateCoroutine(Vector3 target)
     {
         while (transform.position != target)
