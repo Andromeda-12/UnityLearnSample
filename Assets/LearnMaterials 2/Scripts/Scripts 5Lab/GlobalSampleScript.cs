@@ -7,12 +7,12 @@ public class GlobalSampleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject[] furnitures = GameObject.FindGameObjectsWithTag("Furniture");
-        //GameObject.fin
-        foreach (GameObject furniture in furnitures)
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Object");
+
+        foreach(GameObject obj in objects)
         {
-            var script = furniture.GetComponent<SampleScript>();
-            if (script != null)
+            var script = obj.GetComponent<SampleScript>();
+            if(script != null)
                 script.Use();
         }
     }
