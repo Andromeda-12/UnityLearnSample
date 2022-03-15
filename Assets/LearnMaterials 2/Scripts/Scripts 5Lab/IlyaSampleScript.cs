@@ -18,6 +18,7 @@ public class IlyaSampleScript : SampleScript
         myTransform = transform;
     }
 
+    [ContextMenu("Start")]
     public override void Use()
     {
         StartCoroutine(RotateCoroutine(targetRotate));
