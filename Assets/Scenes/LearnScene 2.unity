@@ -572,7 +572,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4913492, g: 0.54607606, b: 0.6320754, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -612,8 +612,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035218976}
-  m_LocalRotation: {x: 0.296054, y: -0.24930558, z: 0.08113744, w: 0.9184854}
-  m_LocalPosition: {x: 24.888859, y: 15.258778, z: 12.261857}
+  m_LocalRotation: {x: 0.0011711232, y: -0.9103749, z: 0.4137754, w: 0.0024714023}
+  m_LocalPosition: {x: -3.0843272, y: 19.16425, z: 3.7022748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5374f840510cc4b47a6b54b48f249c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRotate: {x: 90, y: 180, z: 90}
+  targetRotate: {x: 90, y: 90, z: 90}
   rotateSpeed: 20
 --- !u!65 &1558774702
 BoxCollider:
