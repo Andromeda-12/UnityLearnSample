@@ -31,7 +31,7 @@ public class ObstacleItem : MonoBehaviour
         StartCoroutine(GetDamage(0.2f));
     }
 
-    private IEnumerator GetDamage(float value)
+    public IEnumerator GetDamage(float value)
     {
         currentValue -= value;
         Color endColor = new Color((1 - currentValue) * 255, 0, 0);
