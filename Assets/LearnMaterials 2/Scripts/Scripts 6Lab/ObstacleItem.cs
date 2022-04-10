@@ -5,14 +5,13 @@ using UnityEngine.Events;
 
 public class ObstacleItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    public float currentValue;
-    private Renderer rend;
     [SerializeField]
-    private UnityEvent onDestroyObstacle;
+    public UnityEvent onDestroyObstacle;
 
-    void Start()
+    private float currentValue;
+    private Renderer rend;
+
+    private void Start()
     {
         currentValue = 1;
         onDestroyObstacle.AddListener(() => Destroy(gameObject));
@@ -20,32 +19,17 @@ public class ObstacleItem : MonoBehaviour
         rend.material.color = Color.white;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GetDamage(float value)
     {
-
-    }
-
-    private void OnMouseEnter()
-    {
-        StartCoroutine(GetDamage(0.2f));
-    }
-
-    public IEnumerator GetDamage(float value)
-    {
-        currentValue -= value;
-        Color endColor = new Color((1 - currentValue) * 255, 0, 0);
-        Color startColor = rend.material.color;
-
-        float t = 0;
-        while (t < 1)
+        if (currentValue > 0)
         {
-            rend.material.color = Color.Lerp(startColor, endColor, 1) * Time.deltaTime;
-            t += Time.deltaTime;
-            yield return null;
+            currentValue -= value;
+            rend.material.color = Color.Lerp(Color.white, Color.red, 1 - currentValue);
         }
-
-        if (currentValue <= 0)
-            onDestroyObstacle.Invoke();
+        else
+        {
+            currentValue = 0;
+            onDestroyObstacle?.Invoke();
+        }
     }
 }

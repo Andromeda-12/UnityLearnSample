@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class JadwigaSampleScript : SampleScript
 {
-    private Transform myTransform;
-
     [SerializeField]
     [Min(1)]
     private int count;
@@ -16,15 +14,10 @@ public class JadwigaSampleScript : SampleScript
     [SerializeField]
     GameObject prefab;
 
-    void Start()
-    {
-        myTransform = transform;
-    }
-
     [ContextMenu("Start")]
     public override void Use()
     {
-        Vector3 vector = new Vector3(myTransform.position.x, myTransform.position.y, myTransform.position.z);
+        Vector3 vector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         for (int i = 0; i < count; i++)
         {
